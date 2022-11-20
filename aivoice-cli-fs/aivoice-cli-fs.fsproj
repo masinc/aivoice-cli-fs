@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net472</TargetFramework>
+        <RootNamespace>aivoice_cli</RootNamespace>
+        <AssemblyName>aivoice-cli</AssemblyName>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="Schema.fs" />
+        <Compile Include="Program.fs" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="CommandLineParser" Version="2.9.1" />
+        <PackageReference Include="CommandLineParser.FSharp" Version="2.9.1" />
+        <PackageReference Include="System.Text.Json" Version="7.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="AI.Talk.Editor.Api">
+        <HintPath>C:\Program Files\AI\AIVoice\AIVoiceEditor\AI.Talk.Editor.Api.dll</HintPath>
+        <Private>False</Private>
+      </Reference>
+    </ItemGroup>
+    
+</Project>
